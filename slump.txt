@@ -1,5 +1,5 @@
 Cement	Slag	Fly ash	Water	SP	Coarse Aggr.	Fine Aggr.	SLUMP(cm)	FLOW(cm)	Compressive Strength (28-day)(Mpa)
-273	82	105	210	9	904	680	23	62	34.99
+
 163	149	191	180	12	843	746	0	20	41.14
 162	148	190	179	19	838	741	3	21.5	42.08
 154	112	144	220	10	923	658	20	64	26.82
