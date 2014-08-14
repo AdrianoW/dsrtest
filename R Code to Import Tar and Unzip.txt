@@ -1,0 +1,15 @@
+install.packages('R.utils',dependencies=T)
+library("R.utils")  
+start <- as.Date('2014-08-10')
+today <- as.Date('2014-08-13')
+
+all_days <- seq(start, today, by = 'day')
+year <- year(all_days)
+urls <- paste0('http://cran-logs.rstudio.com/', year, '/', all_days, '.csv.gz')
+
+#download and Unzip
+for (i in 1:length(all_days)){
+download.file(urls,destfile=paste0('./logs',i,'.csv.gz'),method='curl')
+gunzip(paste0('./logs',i,'.csv.gz'))
+
+}
