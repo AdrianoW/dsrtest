@@ -1,5 +1,8 @@
 install.packages('R.utils',dependencies=T)
 library("R.utils")  
+install.packages('lubridate',dependencies=T)
+library("lubridate")
+  
 start <- as.Date('2014-08-10')
 today <- as.Date('2014-08-13')
 
