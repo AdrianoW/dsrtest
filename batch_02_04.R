@@ -56,6 +56,15 @@ for (d in as.character(seq(start, today, by=1))) {
 }
 
 
+wc <- function(fname) {
+   file <- readLines(fname)
+   wrd <- stri_trans_tolower(unlist(stri_extract_words(file)))
+   t <- table(wrd)
+   d <- data.frame(words=names(t),
+      counts=as.integer(t))
+   d[order(d$counts,decreasing=TRUE),]
+}
 
+wc("~/R//powrot-taty-utf8.txt")
 
 
